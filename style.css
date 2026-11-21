@@ -1,0 +1,592 @@
+* {
+    box-sizing: border-box
+}
+
+
+@font-face{
+    font-family: 'DM Sans';
+    src: url('./fonts/DM-Sans-Variable.ttf')
+    format('truetype');
+    font-weight: 100 1000;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.hero {
+    height: 450px;
+    background-image:
+    linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0.5)
+    ), url('./images/hero-image.png');
+    background-size: cover;
+    background-position: center 5%;
+    display: flex;
+    align-items: center;
+    padding: 0 72px;
+}
+
+.hero-content {
+    width: 740px;
+    max-width: 100%;
+    color: #FFFFFF;
+}
+
+.hero h1 {
+    font-family: 'DM Sans' ,
+    sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 16px;
+    color: #FFFFFF;
+}
+
+.hero p {
+     max-width: 520px;
+    font-family: 'DM Sans' ,
+    sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+
+.get-started {
+    display: inline-block;
+    background-color: #543EE0;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 72px;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color:#543EE0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.login-btn {
+    color: #543EE0;
+    text-decoration: none;
+}
+
+.signup-btn {
+    background-color: #543EE0;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+/* ABOUT CHATTER SECTION */
+
+.about-section {
+    padding: 60px 72px;
+    background-color: #FFFFFF;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111111;
+}
+
+.about-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.about-image {
+    flex: 0 0 38%;
+    max-width: 420px;
+}
+
+.about-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* WHY JOIN CHATTER SECTION */
+
+.why-join-section {
+    padding: 50px 72px 70px;
+    background-color: #FFFFFF;
+}
+
+.why-join-section h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #111111;
+}
+
+.why-join-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    flex: 1;
+    padding: 25px;
+}
+
+.feature-icon {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111111;
+}
+
+.feature-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 72px;
+    border-top: 2px solid #543EE0;
+    border-bottom: 2px solid #543EE0;
+    background-color: #FFEDCC;
+}
+
+.testimonial-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial-content p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.testimonial-content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.testimonial-content h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.join-btn {
+    display: inline-block;
+    background-color: #543EE0;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+/* FINAL CTA SECTION */
+
+.cta-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 70px 72px;
+    background-color: #FFFFFF;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cta-images {
+    flex: 0 0 360px;
+    height: 280px;
+    position: relative;
+}
+
+.cta-images img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.profile-one {
+    top: 5px;
+    left: 15%;
+}
+
+.profile-two {
+    top: 35%;
+    left: 45%;
+}
+
+.profile-three {
+    top: 68%;
+    left: 15%;
+}
+
+
+.cta-content {
+    flex: 1;
+}
+
+.cta-content h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #111111;
+    margin-bottom: 20px;
+    max-width: 450px;
+}
+
+.cta-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 24px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #543EE0;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .cta-section {
+        flex-direction: column;
+        padding: 50px 24px;
+        gap: 30px;
+        padding-bottom: 35px;
+    }
+
+    .cta-images {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .cta-content {
+        width: 100%;
+    }
+
+    .cta-content h2 {
+        font-size: 26px;
+    }
+}
+
+
+/* FOOTER SECTION */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 72px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #EEEEEE;
+    gap: 40px;
+    padding-top: 40px;
+    margin: 0;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #543EE0;
+    flex: 1;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-column h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 4px;
+}
+
+.footer-column a {
+    font-size: 13px;
+    color: #555555;
+    text-decoration: none;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .footer {
+        flex-wrap: wrap;
+        padding: 40px 24px;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        flex-basis: 100%;
+    }
+
+    .footer-column {
+        flex: 1 1 40%;
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    .header {
+        flex-direction: column;
+        padding: 20px 24px;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .nav-buttons {
+        justify-content: center;
+    }
+
+    /* HERO SECTION */
+
+    .hero {
+        min-height: 400px;
+        height: auto;
+        padding: 60px 24px;
+        background-position: center 5%;
+        background-size: cover;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* ABOUT CHATTER */
+
+    .about-section {
+        padding: 40px 24px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 25px;
+        align-items: stretch;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+        max-width: 100;
+    }
+
+    .about-text h2 {
+        font-size: 26px;
+    }
+
+    .about-image img {
+        width: 100px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    /* WHY JOIN CHATTER */
+
+    .why-join-section {
+        padding: 40px 24px;
+    }
+
+    .why-join-section h2 {
+        font-size: 26px;
+    }
+
+    .why-join-intro {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .features-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    /* TESTIMONIAL */
+
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 24px;
+        gap: 25px;
+    }
+
+    .testimonial-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .testimonial-content p {
+        font-size: 15px;
+    }
+
+    .testimonial-content h3 span {
+        display: block;
+        margin-top: 5px;
+    }
+
+    /* FINAL CTA */
+
+    .cta-section {
+        flex-direction: column;
+        padding: 40px 24px;
+        gap: 25px;
+    }
+
+    .cta-images {
+        flex: none;
+        width: 100%;
+        max-width: 350px;
+        height: 250px;
+    }
+
+    .cta-content {
+        width: 100%;
+    }
+
+    .cta-content h2 {
+        font-size: 25px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        flex-wrap: wrap;
+        padding: 35px 24px;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        flex-basis: 100%;
+    }
+
+    .footer-column {
+        flex: 1 1 40%;
+    }
+}
